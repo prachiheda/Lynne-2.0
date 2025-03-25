@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE043B0B2D91D5E700247E2C /* Lynne_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE043B0A2D91D5E700247E2C /* Lynne_2_0App.swift */; };
+		0C496E7C2D93447A004F5453 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0C496E7B2D93447A004F5453 /* .gitignore */; };
+		AE043B0B2D91D5E700247E2C /* LynneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE043B0A2D91D5E700247E2C /* LynneApp.swift */; };
 		AE043B0D2D91D5E700247E2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE043B0C2D91D5E700247E2C /* ContentView.swift */; };
 		AE043B0F2D91D5E700247E2C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE043B0E2D91D5E700247E2C /* Item.swift */; };
 		AE043B112D91D5EA00247E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE043B102D91D5EA00247E2C /* Assets.xcassets */; };
@@ -15,13 +16,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C496E7B2D93447A004F5453 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AE043B072D91D5E700247E2C /* Lynne 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lynne 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE043B0A2D91D5E700247E2C /* Lynne_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lynne_2_0App.swift; sourceTree = "<group>"; };
+		AE043B0A2D91D5E700247E2C /* LynneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynneApp.swift; sourceTree = "<group>"; };
 		AE043B0C2D91D5E700247E2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE043B0E2D91D5E700247E2C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AE043B102D91D5EA00247E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE043B132D91D5EA00247E2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0C496E362D932CB4004F5453 /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
+		0C496E442D932F51004F5453 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+		0C496E452D932F65004F5453 /* Utilities */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utilities; sourceTree = "<group>"; };
+		0C496E462D933009004F5453 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AE043B042D91D5E700247E2C /* Frameworks */ = {
@@ -38,7 +47,11 @@
 			isa = PBXGroup;
 			children = (
 				AE043B092D91D5E700247E2C /* Lynne 2.0 */,
-				AE043B082D91D5E700247E2C /* Products */,
+				AE043B0A2D91D5E700247E2C /* LynneApp.swift */,
+				AE043B0C2D91D5E700247E2C /* ContentView.swift */,
+				AE043B0E2D91D5E700247E2C /* Item.swift */,
+				AE043B102D91D5EA00247E2C /* Assets.xcassets */,
+				0C496E7B2D93447A004F5453 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,11 +66,12 @@
 		AE043B092D91D5E700247E2C /* Lynne 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				AE043B0A2D91D5E700247E2C /* Lynne_2_0App.swift */,
-				AE043B0C2D91D5E700247E2C /* ContentView.swift */,
-				AE043B0E2D91D5E700247E2C /* Item.swift */,
-				AE043B102D91D5EA00247E2C /* Assets.xcassets */,
+				0C496E462D933009004F5453 /* Services */,
+				0C496E452D932F65004F5453 /* Utilities */,
+				0C496E442D932F51004F5453 /* Resources */,
+				0C496E362D932CB4004F5453 /* Features */,
 				AE043B122D91D5EA00247E2C /* Preview Content */,
+				AE043B082D91D5E700247E2C /* Products */,
 			);
 			path = "Lynne 2.0";
 			sourceTree = "<group>";
@@ -84,6 +98,12 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0C496E362D932CB4004F5453 /* Features */,
+				0C496E442D932F51004F5453 /* Resources */,
+				0C496E452D932F65004F5453 /* Utilities */,
+				0C496E462D933009004F5453 /* Services */,
 			);
 			name = "Lynne 2.0";
 			productName = "Lynne 2.0";
@@ -129,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE043B142D91D5EA00247E2C /* Preview Assets.xcassets in Resources */,
+				0C496E7C2D93447A004F5453 /* .gitignore in Resources */,
 				AE043B112D91D5EA00247E2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +163,7 @@
 			files = (
 				AE043B0D2D91D5E700247E2C /* ContentView.swift in Sources */,
 				AE043B0F2D91D5E700247E2C /* Item.swift in Sources */,
-				AE043B0B2D91D5E700247E2C /* Lynne_2_0App.swift in Sources */,
+				AE043B0B2D91D5E700247E2C /* LynneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
