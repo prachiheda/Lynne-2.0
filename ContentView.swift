@@ -4,35 +4,53 @@ struct ContentView: View {
     var body: some View {
         TabView {
             // Home Tab
-            VStack {
-                Text("Welcome to the Home Page!")
-                    .font(.largeTitle)
-                    .padding()
+            NavigationView {
+                ZStack {
+                    // Background image
+                    Image("lynne-background-texture")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                    
+                        CheckInView()
+                }
             }
             .tabItem {
-                Image(systemName: "house.fill") // Home icon
+                Image(systemName: "house.fill")
                 Text("Home")
             }
             
+            
             // Calendar Tab
-            VStack {
-                Text("Calendar")
-                    .font(.largeTitle)
-                    .padding()
+            NavigationView {
+                ZStack {
+                    Image("lynne-background-texture")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                    
+                    CalendarView()
+                }
             }
             .tabItem {
-                Image(systemName: "calendar") // Calendar icon
+                Image(systemName: "calendar")
                 Text("Calendar")
             }
             
+
             // Settings Tab
-            VStack {
-                Text("Settings")
-                    .font(.largeTitle)
-                    .padding()
+            NavigationView {
+                ZStack {
+                    Image("lynne-background-texture")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                    
+                    SettingsView()
+                }
             }
             .tabItem {
-                Image(systemName: "gearshape") // Calendar icon
+                Image(systemName: "gearshape")
                 Text("Settings")
             }
         }
@@ -44,4 +62,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
